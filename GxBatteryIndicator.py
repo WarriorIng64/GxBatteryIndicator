@@ -59,7 +59,7 @@ if platform.system() == 'Windows':
     self.image = self.battery_full
   elif status.BatteryLifePercent > 66:
     self.image = self.battery_two_thirds
-  status.BatteryLifePercent > 33:
+  elif status.BatteryLifePercent > 33:
     self.image = self.battery_one_third
   else:
     self.image = self.battery_low
