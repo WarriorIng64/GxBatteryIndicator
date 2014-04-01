@@ -20,10 +20,12 @@
 # Some code based on a StackOverflow answer:
 # http://stackoverflow.com/a/6156606
 
-self.battery_full = pygame.image.load("indicators/default/GxBatteryIndicator/battery_full.png")
-self.battery_two_thirds = pygame.image.load("indicators/default/GxBatteryIndicator/battery_two_thirds.png")
-self.battery_one_third = pygame.image.load("indicators/default/GxBatteryIndicator/battery_one_third.png")
-self.battery_low = pygame.image.load("indicators/default/GxBatteryIndicator/battery_low.png")
+self.battery_100 = pygame.image.load("indicators/default/GxBatteryIndicator/battery_100.png")
+self.battery_80 = pygame.image.load("indicators/default/GxBatteryIndicator/battery_80.png")
+self.battery_60 = pygame.image.load("indicators/default/GxBatteryIndicator/battery_60.png")
+self.battery_40 = pygame.image.load("indicators/default/GxBatteryIndicator/battery_40.png")
+self.battery_20 = pygame.image.load("indicators/default/GxBatteryIndicator/battery_20.png")
+self.battery_critical = pygame.image.load("indicators/default/GxBatteryIndicator/battery_critical.png")
 self.battery_charging = pygame.image.load("indicators/default/GxBatteryIndicator/battery_charging.png")
 
 self.SetIcon(pygame.image.load("indicators/default/GxBatteryIndicator/battery_base.png"))
@@ -56,14 +58,20 @@ if platform.system() == 'Windows':
   if not GetSystemPowerStatus(ctypes.pointer(status)):
     raise ctypes.WinError()
 
-  if status.BatteryLifePercent > 90:
-    self.image = self.battery_full
-  elif status.BatteryLifePercent > 66:
-    self.image = self.battery_two_thirds
-  elif status.BatteryLifePercent > 33:
-    self.image = self.battery_one_third
+  if status.ACLineStatus == 1:
+    self.image = self.battery_charging
+  elif status.BatteryLifePercent > 90:
+    self.image = self.battery_100
+  elif status.BatteryLifePercent > 70:
+    self.image = self.battery_80
+  elif status.BatteryLifePercent > 50:
+    self.image = self.battery_60
+  elif status.BatteryLifePercent > 30:
+    self.image = self.battery_40
+  elif status.BatteryLifePercent > 10:
+    self.image = self.battery_20
   else:
-    self.image = self.battery_low
+    self.image = self.battery_critical
 else:
   self.image = self.icon
 """

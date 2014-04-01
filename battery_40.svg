@@ -14,7 +14,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r"
-   sodipodi:docname="battery_charging.svg">
+   sodipodi:docname="battery_40.svg"
+   inkscape:export-filename="C:\Users\chorton\Documents\GitHub\GxBatteryIndicator\battery_60.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,7 +28,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="21.916667"
-     inkscape:cx="12.443628"
+     inkscape:cx="7.8776493"
      inkscape:cy="12"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -74,12 +77,19 @@
        d="M 6 4 L 6 22 L 18 22 L 18 4 L 6 4 z M 7 5 L 17 5 L 17 21 L 7 21 L 7 5 z "
        transform="translate(0,1028.3622)"
        id="rect2985" />
-    <path
+    <rect
+       y="1043.3622"
+       x="8"
+       height="2"
+       width="8"
+       id="rect3783"
+       style="fill:#00ffff;fill-opacity:1;stroke:none" />
+    <rect
        style="fill:#00ffff;fill-opacity:1;stroke:none"
-       d="m 13,7 -4,7 3,0 -1,5 4,-7 -3,0 z"
-       id="path3918"
-       inkscape:connector-curvature="0"
-       transform="translate(0,1028.3622)"
-       sodipodi:nodetypes="ccccccc" />
+       id="rect3785"
+       width="8"
+       height="2"
+       x="8"
+       y="1046.3622" />
   </g>
 </svg>

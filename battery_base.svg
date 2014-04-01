@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="battery_base.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,7 +25,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="21.916667"
-     inkscape:cx="6.2737643"
+     inkscape:cx="7.8776493"
      inkscape:cy="12"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,20 +60,19 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-1028.3622)">
-    <path
-       style="fill:#00ffff;stroke:none"
-       d="M 9 4 C 7.338 4 6 5.338 6 7 L 6 19 C 6 20.662 7.338 22 9 22 L 15 22 C 16.662 22 18 20.662 18 19 L 18 7 C 18 5.338 16.662 4 15 4 L 9 4 z M 9.625 5.84375 L 14.375 5.84375 C 15.695753 5.84375 16.78125 6.8979972 16.78125 8.21875 L 16.78125 17.78125 C 16.78125 19.102003 15.695753 20.15625 14.375 20.15625 L 9.625 20.15625 C 8.3042472 20.15625 7.21875 19.102003 7.21875 17.78125 L 7.21875 8.21875 C 7.21875 6.8979972 8.3042472 5.84375 9.625 5.84375 z "
-       transform="translate(0,1028.3622)"
-       id="rect2987" />
     <rect
        style="fill:#00ffff;fill-opacity:1;stroke:none"
        id="rect2989"
        width="6"
-       height="2"
+       height="1"
        x="9"
-       y="1"
-       transform="translate(0,1028.3622)"
+       y="1030.3622"
        rx="0"
-       ry="2" />
+       ry="1" />
+    <path
+       style="fill:#00ffff;fill-opacity:1;stroke:none"
+       d="M 6 4 L 6 22 L 18 22 L 18 4 L 6 4 z M 7 5 L 17 5 L 17 21 L 7 21 L 7 5 z "
+       transform="translate(0,1028.3622)"
+       id="rect2985" />
   </g>
 </svg>

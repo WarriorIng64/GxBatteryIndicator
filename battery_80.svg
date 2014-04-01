@@ -14,8 +14,8 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r"
-   sodipodi:docname="battery_low.svg"
-   inkscape:export-filename="C:\Users\chorton\Documents\GitHub\GxBatteryIndicator\battery_low.png"
+   sodipodi:docname="battery_100.svg"
+   inkscape:export-filename="C:\Users\chorton\Documents\GitHub\GxBatteryIndicator\battery_100.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -28,7 +28,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="21.916667"
-     inkscape:cx="3.878327"
+     inkscape:cx="7.8776493"
      inkscape:cy="12"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -63,32 +63,47 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-1028.3622)">
-    <path
-       style="fill:#ff0000;stroke:none;fill-opacity:1"
-       d="M 9 4 C 7.338 4 6 5.338 6 7 L 6 19 C 6 20.662 7.338 22 9 22 L 15 22 C 16.662 22 18 20.662 18 19 L 18 7 C 18 5.338 16.662 4 15 4 L 9 4 z M 9.625 5.84375 L 14.375 5.84375 C 15.695753 5.84375 16.78125 6.8979972 16.78125 8.21875 L 16.78125 17.78125 C 16.78125 19.102003 15.695753 20.15625 14.375 20.15625 L 9.625 20.15625 C 8.3042472 20.15625 7.21875 19.102003 7.21875 17.78125 L 7.21875 8.21875 C 7.21875 6.8979972 8.3042472 5.84375 9.625 5.84375 z "
-       transform="translate(0,1028.3622)"
-       id="rect2987" />
     <rect
-       style="fill:#ff0000;fill-opacity:1;stroke:none"
+       style="fill:#00ffff;fill-opacity:1;stroke:none"
        id="rect2989"
        width="6"
-       height="2"
+       height="1"
        x="9"
-       y="1"
-       transform="translate(0,1028.3622)"
+       y="1030.3622"
        rx="0"
-       ry="2" />
+       ry="1" />
     <path
-       style="fill:#000000;fill-opacity:0.19607843;stroke:none"
-       d="m 11,1035.4247 c -1.662,0 -3,1.338 -3,3 l 8,0 c 0,-1.662 -1.338,-3 -3,-3 l -2,0 z"
-       id="path3025" />
-    <path
-       style="fill:#000000;fill-opacity:0.19607843;stroke:none"
-       d="m 8,1039.4247 0,3.9375 8,0 0,-3.9375 -8,0 z"
-       id="path3023" />
-    <path
-       style="fill:#000000;fill-opacity:0.19607843;stroke:none"
-       d="m 8,1044.3622 0,0.062 c 0,1.662 1.338,3 3,3 l 2,0 c 1.662,0 3,-1.338 3,-3 l 0,-0.062 -8,0 z"
-       id="rect3013" />
+       style="fill:#00ffff;fill-opacity:1;stroke:none"
+       d="M 6 4 L 6 22 L 18 22 L 18 4 L 6 4 z M 7 5 L 17 5 L 17 21 L 7 21 L 7 5 z "
+       transform="translate(0,1028.3622)"
+       id="rect2985" />
+    <rect
+       y="1037.3622"
+       x="8"
+       height="2"
+       width="8"
+       id="rect3779"
+       style="fill:#00ffff;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#00ffff;fill-opacity:1;stroke:none"
+       id="rect3781"
+       width="8"
+       height="2"
+       x="8"
+       y="1040.3622" />
+    <rect
+       y="1043.3622"
+       x="8"
+       height="2"
+       width="8"
+       id="rect3783"
+       style="fill:#00ffff;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#00ffff;fill-opacity:1;stroke:none"
+       id="rect3785"
+       width="8"
+       height="2"
+       x="8"
+       y="1046.3622" />
   </g>
 </svg>
