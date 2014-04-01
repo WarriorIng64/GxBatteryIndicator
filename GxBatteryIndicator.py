@@ -34,6 +34,8 @@ self.SetIcon(self.battery_unknown)
 self.frame_code = """
 import platform
 
+self.status_string = ""
+
 if platform.system() == 'Windows':
   
   global ctypes
@@ -74,6 +76,14 @@ if platform.system() == 'Windows':
     self.image = self.battery_20
   else:
     self.image = self.battery_critical
+  
+  self.status_string = "Your battery is " + str(status.BatteryLifePercent) + "% charged"
+  if status.ACLineStatus == 1:
+    self.status_string += " and is plugged in"
+  self.status_string += "."
 else:
   self.image = self.icon
+  self.status_string = "Your battery status is unknown."
+
+self.SetClickCode('self.wm.ShowPopupMessage("Battery Status", self.status_string)')
 """
