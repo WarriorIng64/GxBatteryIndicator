@@ -27,8 +27,9 @@ self.battery_40 = pygame.image.load("indicators/default/GxBatteryIndicator/batte
 self.battery_20 = pygame.image.load("indicators/default/GxBatteryIndicator/battery_20.png")
 self.battery_critical = pygame.image.load("indicators/default/GxBatteryIndicator/battery_critical.png")
 self.battery_charging = pygame.image.load("indicators/default/GxBatteryIndicator/battery_charging.png")
+self.battery_unknown = pygame.image.load("indicators/default/GxBatteryIndicator/battery_unknown.png")
 
-self.SetIcon(pygame.image.load("indicators/default/GxBatteryIndicator/battery_base.png"))
+self.SetIcon(self.battery_unknown)
 
 self.frame_code = """
 import platform
