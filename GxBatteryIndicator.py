@@ -31,12 +31,13 @@ self.battery_charging = pygame.image.load("indicators/default/GxBatteryIndicator
 self.SetIcon(pygame.image.load("indicators/default/GxBatteryIndicator/battery_base.png"))
 
 self.frame_code = """
-global ctypes
 import platform
-import ctypes
-from ctypes import wintypes
 
 if platform.system() == 'Windows':
+  
+  global ctypes
+  import ctypes
+  from ctypes import wintypes
 
   class SYSTEM_POWER_STATUS(ctypes.Structure):
     _fields_ = [
