@@ -81,6 +81,21 @@ if platform.system() == 'Windows':
   if status.ACLineStatus == 1:
     self.status_string += " and is plugged in"
   self.status_string += "."
+  
+elif platform.system() == 'Linux':
+  
+  # Ubuntu and elementary OS are supported
+  
+  import subprocess
+  
+  power_sources = []
+  
+  pipe = subprocess.Popen(["upower", "-e"], stdout=subprocess.PIPE).stdout
+  for power_source in pipe:
+    power_sources.append(power_source)
+  
+  self.status_string = "You have " + str(len(power_sources)) + " power sources."
+  
 else:
   self.image = self.icon
   self.status_string = "Your battery status is unknown."
