@@ -94,7 +94,11 @@ elif platform.system() == 'Linux':
   for power_source in pipe:
     power_sources.append(power_source)
   
-  self.status_string = "You have " + str(len(power_sources)) + " power sources."
+  self.status_string = "You have " + str(len(power_sources)) + " power sources:"
+  for source in power_sources:
+    self.status_string += source + " "
+  
+  self.image = self.icon
   
 else:
   self.image = self.icon
