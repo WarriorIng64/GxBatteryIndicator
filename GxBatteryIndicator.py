@@ -97,6 +97,7 @@ elif platform.system() == 'Linux':
   percentages = []
   for power_source in power_sources:
     if "battery" in power_source:
+      print "Calling upower -i " + power_source
       source_pipe = subprocess.Popen(["upower", "-i", power_source], stdout=subprocess.PIPE).stdout
       for line in source_pipe:
         if "percentage" in line:
@@ -117,10 +118,11 @@ elif platform.system() == 'Linux':
       self.image = self.battery_20
     else:
       self.image = self.battery_critical
+    self.status_string = "Your laptop is " + str(average_percentage) + "% charged"
+  else:
+    self.status_string = "No battery was found "
   
-  self.status_string = "You have " + str(len(power_sources)) + " power sources:"
-  for source in power_sources:
-    self.status_string += source + " "
+  self.status_string += " (" + str(len(power_sources)) + " power sources)"
   
   self.image = self.icon
   
