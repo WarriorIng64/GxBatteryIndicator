@@ -94,6 +94,30 @@ elif platform.system() == 'Linux':
   for power_source in pipe:
     power_sources.append(power_source)
   
+  percentages = []
+  for power_source in power_sources:
+    if "battery" in power_source:
+      source_pipe = subprocess.Popen(["upower", "-i", power_source], stdout=subprocess.PIPE).stdout
+      for line in source_pipe:
+        if "percentage" in line:
+          import re
+          percentage = float((re.findall(r"\d*\.\d+|\d+", line))[0])
+          percentages.append(percentage)
+  if len(percentages) > 0:
+    average_percentage = sum(percentages) / float(len(percentages))
+    if average_percentage > 90:
+      self.image = self.battery_100
+    elif average_percentage > 70:
+      self.image = self.battery_80
+    elif average_percentage > 50:
+      self.image = self.battery_60
+    elif average_percentage > 30:
+      self.image = self.battery_40
+    elif average_percentage > 10:
+      self.image = self.battery_20
+    else:
+      self.image = self.battery_critical
+  
   self.status_string = "You have " + str(len(power_sources)) + " power sources:"
   for source in power_sources:
     self.status_string += source + " "
