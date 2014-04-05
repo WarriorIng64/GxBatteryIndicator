@@ -105,10 +105,6 @@ elif platform.system() == 'Linux':
           percentage = float((re.findall(r"\d*\.\d+|\d+", line))[0])
           percentages.append(percentage)
   if len(percentages) > 0:
-    print "Percentages: ",
-    for p in percentages:
-      print str(p),
-    print
     average_percentage = sum(percentages) / float(len(percentages))
     if average_percentage > 90:
       self.image = self.battery_100
