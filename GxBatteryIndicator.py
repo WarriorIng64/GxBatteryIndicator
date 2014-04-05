@@ -34,6 +34,7 @@ self.SetIcon(self.battery_unknown)
 self.frame_code = """
 import platform
 
+self.image = self.icon
 self.status_string = ""
 
 if platform.system() == 'Windows':
@@ -127,10 +128,7 @@ elif platform.system() == 'Linux':
   
   self.status_string += " (" + str(len(power_sources)) + " power sources)."
   
-  self.image = self.icon
-  
 else:
-  self.image = self.icon
   self.status_string = "Your battery status is unknown."
 
 self.SetClickCode('self.wm.ShowPopupMessage("Battery Status", self.status_string)')
