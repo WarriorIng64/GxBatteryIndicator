@@ -31,7 +31,7 @@ self.battery_unknown = pygame.image.load("indicators/default/GxBatteryIndicator/
 
 self.SetIcon(self.battery_unknown)
 
-self.current_frame = 0
+self.current_frame = 60
 self.frames_to_wait = 60
 
 self.frame_code = """
