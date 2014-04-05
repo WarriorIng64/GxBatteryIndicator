@@ -92,7 +92,7 @@ elif platform.system() == 'Linux':
   
   pipe = subprocess.Popen(["upower", "-e"], stdout=subprocess.PIPE).stdout
   for power_source in pipe:
-    power_sources.append(power_source)
+    power_sources.append(power_source.strip())
   
   percentages = []
   for power_source in power_sources:
