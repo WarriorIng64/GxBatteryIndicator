@@ -124,9 +124,9 @@ if self.current_frame >= self.frames_to_wait:
         self.image = self.battery_20
       else:
         self.image = self.battery_critical
-      self.status_string = "Your laptop is " + str(average_percentage) + "% charged"
+      self.status_string = "Your computer is " + str(average_percentage) + "% charged"
     else:
-      self.status_string = "No battery was found"
+      self.status_string = "You're running on regular AC"
     
     self.status_string += " (" + str(len(power_sources)) + " power sources)."
     
