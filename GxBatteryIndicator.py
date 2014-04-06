@@ -103,7 +103,7 @@ if self.current_frame >= self.frames_to_wait:
     
     percentages = []
     for power_source in power_sources:
-      if "battery" in power_source:
+      if "battery" in power_source or "ups" in power_source:
         source_pipe = subprocess.Popen(["upower", "-i", power_source], stdout=subprocess.PIPE).stdout
         for line in source_pipe:
           if "percentage" in line:
